@@ -1,2 +1,1 @@
-vim.opt.shiftwidth = 2
-vim.opt.formatoptions:remove "o"
+vim.opt.shiftwidth = 4
