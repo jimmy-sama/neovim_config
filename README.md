@@ -1,5 +1,30 @@
 # Neovim knowledgebase
 
+## Basic Navigation
+To move the cursor in normal mode use the "h", "j", "k" and "l" keys.
+
+When you want to jump around the words you have the options with "w", "b" and "e".
+    * "w" jumps to the start of the next word
+    * "b" jumps backwards to the start of the next word
+    * "e" jumps to the end of the next word
+
+
+### Primes showcase stuff
+    * ft and FT
+    * yy, dd, p and P
+    * x, s and S
+    * %
+    * ~
+    * $, _, 0, I and A
+    * di, ci, ya, vi
+    * =I
+    * da, ca, ya, va, =a
+    * g (for example gi, gv)
+    * CTRL + w + CTRL + v = new window split verticaly
+    * CTRL + w + CTRL + s = new window split horizontaly (think of s for sunset ;) )
+    * CTRL + w + navigation key = move around the windows
+
+
 ## LSP
 CRTL + ] = go to function definition
 CRTL + t = jump back
@@ -48,3 +73,11 @@ One pretty cool thing is the :cdo command, with that you can do vim commands on 
 g + r + r puts references from the lsp inside the quickfix list
 to write your own functions use setqflist (:help setqflist)
 vim.diagnostic also has the setqflist function, but by default that puts every diagnostic inside the list not just for the current file, therefor you have to write your own function to filter that 
+
+# Topics of interes that require further clarification
+    * Quickfix List
+    * Types of Buffers
+    * LSP functionality
+    * Formatting (and formatting with exlusions like when align a list of keymaps in dwm)
+    * ftplugin and .editorconfig (is it enough to define everythin in ftplugin?)
+
